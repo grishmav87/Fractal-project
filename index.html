@@ -11,10 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=News+Cycle&display=swap"
       rel="stylesheet"
     />
-    />
     <style>
       body {
-        background-image: url(/images/fractal-pattern-invert.svg);
+        background-image: url(/images/fractal-pattern.svg);
         background-repeat: repeat;
         background-size: 10%;
       }
@@ -22,7 +21,7 @@
         background: white;
         max-width: 600px;
         margin: 10px auto;
-        padding: 30px;
+        padding: 20px;
         border-radius: 20px;
         border: 2px solid black;
         border-color: black;
@@ -33,7 +32,7 @@
         font-size: 48px;
         font-weight: 700;
         margin: 0;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
       p {
         text-align: center;
@@ -43,6 +42,7 @@
       }
       img {
         width: 100%;
+        border-radius: 10px;
       }
       button {
         display: block;
@@ -69,7 +69,6 @@
         font-weight: 700;
       }
       .river-fractal-image {
-        border-radius: 10px;
         transition: transform 150ms ease-in-out;
       }
       .river-fractal-image:hover {
@@ -78,7 +77,9 @@
       }
       .grid {
         display: grid;
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 20px;
       }
       footer {
         text-align: center;
@@ -113,9 +114,13 @@
         Approximate fractals found in nature display self-similarity over
         extended, but finite, scale ranges. Fractal-like patterns occur widely
         in nature, in phenomena as diverse as clouds, river networks, geologic
-        fault lines, mountains, coastlines, animal coloration, snow
-        flakes,crystals blood vessel branching, actin cytoskeleton, and ocean
-        waves.
+        fault lines, mountains, coastlines, animal coloration, snow flakes,
+        crystals, blood vessel branching, actin cytoskeleton, and ocean waves.
+        <br />
+        <br />
+        Read more about fractals
+        <a href="https://en.wikipedia.org/wiki/Fractal" target="_blank">here</a
+        >.
       </p>
       <div class="grid">
         <img src="/images/Mountain_fractal.jpg" alt="Fractal mountain" />
