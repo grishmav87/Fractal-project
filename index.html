@@ -136,11 +136,6 @@
         in nature, in phenomena as diverse as clouds, river networks, geologic
         fault lines, mountains, coastlines, animal coloration, snow flakes,
         crystals, blood vessel branching, actin cytoskeleton, and ocean waves.
-        <br />
-        <br />
-        Read more about fractals
-        <a href="https://en.wikipedia.org/wiki/Fractal" target="_blank">here</a
-        >.
       </p>
       <div class="grid">
         <img src="/images/Mountain_fractal.jpg" alt="Fractal mountain" />
@@ -148,10 +143,11 @@
         <img src="/images/Leaf_fractal.jpg" alt="Fractal leaf" />
         <img src="/images/branches_fractal.jpg" alt="Fractal copper crystals" />
       </div>
-
-      <button class="learn-more-button">
-        Want to learn more about fractals?
-      </button>
+      <a href="https://en.wikipedia.org/wiki/Fractal" target="_blank"
+        ><button class="learn-more-button">
+          Want to learn more about fractals?
+        </button></a
+      >
     </div>
     <footer>
       Coded by Grishma V. (<a
@@ -167,23 +163,8 @@
         // if (body.classList.contains("dark")) {body.classList.remove("dark");} else {body.classList.add("dark");}
       }
 
-      function followUpQuery() {
-        let query = prompt("Have you heard of fractals before?");
-        let name = prompt("What is your first name?");
-        let email = prompt("What is your email?");
-
-        alert(
-          "Thanks, " +
-            name +
-            "! We'll send you more details on fractals in nature!"
-        );
-      }
-
       let themeButton = document.querySelector(".theme-button");
       themeButton.addEventListener("click", changeTheme);
-
-      let learnMoreButton = document.querySelector(".learn-more-button");
-      learnMoreButton.addEventListener("click", followUpQuery);
     </script>
   </body>
 </html>
