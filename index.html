@@ -76,6 +76,10 @@
         filter: contrast(80%);
         transform: scale(1.3);
       }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+      }
       footer {
         text-align: center;
         display: block;
@@ -113,13 +117,13 @@
         flakes,crystals blood vessel branching, actin cytoskeleton, and ocean
         waves.
       </p>
-      <img src="/images/Mountain_fractal.jpg" alt="Fractal mountain" />
-      <img src="/images/Lightning_fractal.jpg" alt="Fractal lightning" />
-      <img src="/images/Leaf_fractal.jpg" alt="Fractal leaf" />
-      <img
-        src="/images/Dendritic_Copper_Crystals.jpg"
-        alt="Fractal copper crystals"
-      />
+      <div class="grid">
+        <img src="/images/Mountain_fractal.jpg" alt="Fractal mountain" />
+        <img src="/images/Lightning_fractal.jpg" alt="Fractal lightning" />
+        <img src="/images/Leaf_fractal.jpg" alt="Fractal leaf" />
+        <img src="/images/branches_fractal.jpg" alt="Fractal copper crystals" />
+      </div>
+
       <button>Want to learn more about fractals?</button>
     </div>
     <footer>Coded by Grishma V.</footer>
