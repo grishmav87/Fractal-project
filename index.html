@@ -44,6 +44,10 @@
         width: 100%;
         border-radius: 10px;
       }
+      a {
+        text-decoration: none;
+        color: brown;
+      }
       button {
         display: block;
         margin: 10px auto;
@@ -85,7 +89,7 @@
         text-align: center;
         display: block;
         margin: 0 auto;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
         background: rgba(255, 255, 255, 0.97);
         max-width: 640px;
@@ -149,7 +153,13 @@
         Want to learn more about fractals?
       </button>
     </div>
-    <footer>Coded by Grishma V.</footer>
+    <footer>
+      Coded by Grishma V. (<a
+        href="https://github.com/grishmav87/Fractal-project"
+        target="_blank"
+        >open-sourced</a
+      >)
+    </footer>
     <script>
       function changeTheme() {
         let body = document.querySelector("body");
