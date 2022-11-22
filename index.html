@@ -18,7 +18,7 @@
         background-size: 10%;
       }
       .container {
-        background: white;
+        background: rgba(255, 255, 255, 0.97);
         max-width: 600px;
         margin: 10px auto;
         padding: 20px;
@@ -86,16 +86,32 @@
         display: block;
         margin: 0 auto;
         font-size: 20px;
-        font-weight: 700;
-        background-color: white;
+        font-weight: 500;
+        background: rgba(255, 255, 255, 0.97);
         max-width: 640px;
         border-radius: 8px;
+        border: 1px solid black;
         font-family: "News Cycle", sans-serif;
+      }
+      .dark {
+        background-image: url(/images/fractal-pattern-invert.svg);
+        color: white;
+      }
+      .dark .container {
+        background: rgba(0, 0, 0, 0.9);
+        border: 1px solid white;
+      }
+      .dark footer {
+        background: rgba(0, 0, 0, 0.9);
+        border: 1px solid white;
+      }
+      .dark a {
+        color: darkkhaki;
       }
     </style>
   </head>
   <body>
-    <button class="theme-button">Dark theme</button>
+    <button class="theme-button">Change theme</button>
     <div class="container">
       <h1>Fractals in nature</h1>
       <a href="http://paulbourke.net/fractals/googleearth/" target="_blank"
@@ -129,8 +145,35 @@
         <img src="/images/branches_fractal.jpg" alt="Fractal copper crystals" />
       </div>
 
-      <button>Want to learn more about fractals?</button>
+      <button class="learn-more-button">
+        Want to learn more about fractals?
+      </button>
     </div>
     <footer>Coded by Grishma V.</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+        // if (body.classList.contains("dark")) {body.classList.remove("dark");} else {body.classList.add("dark");}
+      }
+
+      function followUpQuery() {
+        let query = prompt("Have you heard of fractals before?");
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email?");
+
+        alert(
+          "Thanks, " +
+            name +
+            "! We'll send you more details on fractals in nature!"
+        );
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let learnMoreButton = document.querySelector(".learn-more-button");
+      learnMoreButton.addEventListener("click", followUpQuery);
+    </script>
   </body>
 </html>
